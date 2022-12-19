@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.preprocessing import LabelEncoder
+from sklearn import metrics
 
 df = pd.read_csv("Housing.csv")
 
@@ -29,10 +30,12 @@ y= df.iloc [:,:1]
 
 regressor = RandomForestRegressor(n_estimators = 100, random_state = 0)
 
-regressor.fit(x,y.values.ravel())
+regressor.fit(x.values,y.values.ravel())
 
 # test the output by changing values
-y_pred = regressor.predict(np.array([3300, 2, 2, 1, 1, 0, 0, 1, 1, 2, 0, 0]).reshape(1, 12)) 
-estimate = y_pred[0]
-print("Your estimated price is : " + estimate)
+y_pred = regressor.predict(np.array([3500, 3, 2, 1, 1, 0, 0, 1, 1, 2, 0, 0]).reshape(1, 12)) 
 
+estimate_int = y_pred.astype(np.int64)
+estimate_str = str(estimate_int[0])
+print("Your estimated price is : " + estimate_str)
+print(regressor.score(x.values,y.values))

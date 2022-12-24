@@ -421,9 +421,6 @@ aside article.last {
 	color:#fff;
 	font-weight:bold;
 }
-#contacts-form fieldset {
-	border:none;
-}
 #contacts-form label {
 	display:block;
 	height:26px;
@@ -462,38 +459,8 @@ footer {
 	color:#777;
 	font-size:.75em;
 }
-footer .footerlink {
-	position:relative;
-	margin:0 auto;
-	width:976px;
-}
-.footerlink p {
-	margin:0;
-	padding:0;
-	line-height:normal;
-	white-space:nowrap;
-	text-indent:inherit;
-	color:#777;
-}
-.footerlink a {
-	color:#777;
-	font-weight:normal;
-	margin:0;
-	padding:0;
-	border:none;
-	text-decoration:underline;
-	background-color:transparent;
-}
-.footerlink a:hover {
-	color:#777;
-	background-color:transparent;
-	text-decoration:none;
-}
-.footerlink .lf {
-	float:left;
-}
-.footerlink .rf {
-	float:right;
+
+
 }
 a {
 	outline:none;
@@ -504,3 +471,33 @@ a {
     width: 33.33%;
     padding: 5px;
 }
+
+input, label {
+    display:block;
+    color: black;
+}
+
+input {
+    padding: 2px;
+    margin-right: 10px;
+}
+
+
+.radio-group {
+  margin-top: 5px;
+  display: flex;
+  align: center;
+}
+
+.radio {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: row;
+}
+
+input[type=radio],
+    input.radio {
+      float: left;
+      clear: none;
+      margin: 0 5px 0 5px;
+    }

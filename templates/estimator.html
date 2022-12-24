@@ -62,11 +62,56 @@
     <div class="clearfix">
       <section id="mainContent" class="grid_10">
         <article>
-          <h2>Home Value Estimator</h2>
           <div class="wrapper">
-            <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit Praesent vestibulum moles tie lacuseneane nonummy. </h3>
-
-            <a href="#" class="button">Calculate</a> </div>
+            <div class="box">
+              <h2>Home Value Estimator</h2>
+              <p>Our trusted tool to help you estimate the cost of an existing or future home in of our lovely neighborhoods</p>
+              <div style="float:left;"> <label for="area"><b>Area</b></label> <input id="area" type="text" value="" name="area"> </div>
+              <div style="float:left;"> <label for="bedrooms"><b>Bedrooms</b></label> <input id="bedrooms" type="text" value="" name="bedrooms"> </div>
+              <br style="clear:both;" />
+              <div style="float:left;"> <label for="bathrooms"><b>Bathrooms</b></label> <input id="bathrooms" type="text" value="" name="bathrooms"> </div>
+              <div style="float:left;"> <label for="stories"><b>Stories</b></label> <input id="stories" type="text" value="" name="stories"> </div>
+              <br style="clear:both;" />
+              <div class="radio-group"> <label><b>Mainroad Access:</b></label>
+                <label class="radio" for="mainroad_yes"><input id="mainroad_yes" type="radio" value="" name="mainroad">Yes</label>
+                <label class="radio" for="mainroad_no"><input id="mainroad_no" type="radio" value="" name="mainroad">No</label>
+              </div>
+              <div class="radio-group"> <label><b>Guestroom:</b></label>
+                <input class="radio" id="guestroom_yes" type="radio" value="" name="guestroom"><label for="guestroom_yes">Yes</label>
+                <input class="radio" id="guestroom_no" type="radio" value="" name="guestroom"><label for="guestroom_no">No</label>
+              </div>
+              <div class="radio-group"> <label><b>Basement:</b></label>
+                <input class="radio" id="basement_yes" type="radio" value="" name="basement"><label for="basement_yes">Yes</label>
+                <input class="radio" id="basement_no" type="radio" value="" name="basement"><label for="basement_no">No</label>
+              </div>
+              <div class="radio-group"> <label><b>Hotwater Heating:</b></label>
+                <input class="radio" id="hotwater_yes" type="radio" value="" name="hotwater"><label for="hotwater_yes">Yes</label>
+                <input class="radio" id="hotwater_no" type="radio" value="" name="hotwater"><label for="hotwater_no">No</label>
+              </div>
+              <div class="radio-group"> <label><b>Airconditioning:</b></label>
+                <input class="radio" id="aircon_yes" type="radio" value="" name="aircon"><label for="aircon_yes">Yes</label>
+                <input class="radio" id="aircon_no" type="radio" value="" name="aircon"><label for="aircon_no">No</label>
+              </div>
+              <div class="radio-group"> <label><b>Parking Spots:</b></label>
+                <input class="radio" id="parking_0" type="radio" value="" name="parking"><label for="parking_0">0</label>
+                <input class="radio" id="parking_1" type="radio" value="" name="parking"><label for="parking_1">1</label>
+                <input class="radio" id="parking_2" type="radio" value="" name="parking"><label for="parking_2">2</label>
+                <input class="radio" id="parking_3" type="radio" value="" name="parking"><label for="parking_3">3</label>
+              </div>
+              <div class="radio-group"> <label><b>High-Demand Neighborhood:</b></label>
+                <input class="radio" id="highdemand_yes" type="radio" value="" name="highdemand"><label for="highdemand_yes">Yes</label>
+                <input class="radio" id="highdemand_no" type="radio" value="" name="highdemand"><label for="highdemand_no">No</label>
+              </div>
+              <div class="radio-group"> <label><b>Furnishing Status:</b></label>
+                <input class="radio" id="furnishing_full" type="radio" value="" name="furnishing"><label for="furnishing_full">Fully-Furnished</label>
+                <input class="radio" id="furnishing_semi" type="radio" value="" name="furnishing"><label for="furnishing_semi">Semi-Furnished</label>
+                <input class="radio" id="furnishing_none" type="radio" value="" name="furnishing"><label for="furnishing_none">Unfurnished</label>
+              </div>
+              <br /> <a href="#" class="button">Calculate</a>
+              <br style="clear:both;" />
+              <input type="text" id="estimate" name="estimate" value="" readonly>
+            </div>
+          </div>
         </article>
         <article class="last">
           <h2>Mortgage Center</h2>
@@ -74,18 +119,10 @@
             <h5>Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis. </h5>
             <h4>Nulla dsce feugiat malesuada odiobi nunc odio gravida at cursus nec luctusa loremaece nas trism dolor sit aconsecteetuer adipiscinges elitraesent</h4>
           </hgroup>
-
         </article>
       </section>
       <aside class="grid_6">
         <div class="prefix_1">
-          <article>
-            <div class="box">
-              <h2>Find a Sell Associate</h2>
-              <p>Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
-              <p>Fusce feugiat malesuada odio. Morbi nunc odio, gravida at, cursus nec, luctus a, lorem. Maecenas tristique orci ac sem. Duis ultricies pharetra magna.</p>
-            </div>
-          </article>
           <article class="last">
             <h2>Find Sales</h2>
             <h4>Nulla dsce feugiat malesuada odiobi nunc odio gravida at cursus nec luctusa loremaece nas trism dolor sit aconsecteetuer adipiscinges elitraesent.</h4>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Orange Acres</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="{{url_for('static', filename='css/reset.css')}}" type="text/css" media="all">
+<link rel="stylesheet" href="{{url_for('static', filename='css/grid.css')}}" type="text/css" media="all">
+<link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}" type="text/css" media="all">
+<script type="text/javascript" src="{{url_for('static', filename='js/jquery-1.4.2.min.js')}}" ></script>
+<script type="text/javascript" src="{{url_for('static', filename='js/cufon-yui.js')}}"></script>
+<script type="text/javascript" src="{{url_for('static', filename='js/Myriad_Pro_italic_400-Myriad_Pro_italic_600.font.js')}}"></script>
+<script type="text/javascript" src="{{url_for('static', filename='js/cufon-replace.js')}}"></script>
+<script type="text/javascript" src="{{url_for('static', filename='js/jquery.faded.js')}}"></script>
+<script type="text/javascript" src="{{url_for('static', filename='js/script.js')}}"></script>
+<!--[if lt IE 7]>
+<script type="text/javascript" src="{{url_for('static', filename='js/ie_png.js')}}"></script>
+<script type="text/javascript">ie_png.fix('.png, .logo, .extra-banner');</script>
+<![endif]-->
+<!--[if lt IE 9]><script type="text/javascript" src="{{url_for('static', filename='js/html5.js')}}"></script><![endif]-->
+</head>
+<body>
+<!-- START PAGE SOURCE -->
+<header>
+  <div class="container_16">
+    <div class="logo">
+      <h1><a href="#"><strong>Orange</strong> Acres</a></h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="/home" class="current">Home</a></li>
+        <li><a href="/estimator">Estimator</a></li>
+      </ul>
+    </nav>
+    <div id="faded">
+      <div class="rap">
+        <a href="#"><img src="{{url_for('static', filename='images/big-img1.jpg')}}" alt="" width="571" height="398"></a>
+        <a href="#"><img src="{{url_for('static', filename='images/big-img2.jpg')}}" alt="" width="571" height="398"></a>
+        <a href="#"><img src="{{url_for('static', filename='images/big-img3.jpg')}}" alt="" width="571" height="398"></a>
+      </div>
+      <ul class="pagination">
+        <li> <a href="#" rel="0"> <img src="{{url_for('static', filename='images/f_thumb1.png')}}" alt=""> <span class="left"> English Estate<br />
+          2017 year<br />
+          5000 sq.ft </span> <span class="right"> European<br />
+          3 beds<br />
+          2 baths </span> </a> </li>
+        <li> <a href="#" rel="1"> <img src="{{url_for('static', filename='images/f_thumb2.png')}}" alt=""> <span class="left"> Southern Villa<br />
+          2019 year<br />
+          3500 sq.ft </span> <span class="right"> Hacienda<br />
+          5 beds<br />
+          3 baths </span> </a> </li>
+        <li> <a href="#" rel="2"> <img src="{{url_for('static', filename='images/f_thumb3.png')}}" alt=""> <span class="left"> Family Home<br />
+          2021 year<br />
+          2200 sq.ft </span> <span class="right"> Hacienda<br />
+          3 beds<br />
+          3 baths </span> </a> </li>
+      </ul>
+      <img src="{{url_for('static', filename='images/extra-banner.png')}}" alt="" class="extra-banner"> </div>
+  </div>
+</header>
+<section id="content">
+  <div class="container_16">
+    <div class="clearfix">
+      <h2>Current Housing Statistics</h2>
+      <div class="row">
+      <img style="border:5px solid #d92400" src="{{url_for('static', filename='images/hist_plot.png')}}" width="550" height="450">
+      </div>
+      <div class="row">
+        <img style="border:5px solid #d92400" src="{{url_for('static', filename='images/line_plot.png')}}" width="550" height="450">
+      </div>
+      <div class="row">
+      <img style="border:5px solid #d92400" src="{{url_for('static', filename='images/scatter_plot.png')}}" width="550" height="450">
+      </div>
+    </div>
+    </div>
+  </div>
+</section>
+<script type="text/javascript">
+$(function () {
+    //accordion
+    $(".accordion dt").toggle(function () {
+        $(this).next().slideDown();
+    }, function () {
+        $(this).next().slideUp();
+    });
+})
+</script>
+<script type="text/javascript"> Cufon.now(); </script>
+<!-- END PAGE SOURCE -->
+</body>
+</html>

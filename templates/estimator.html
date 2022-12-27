@@ -67,11 +67,11 @@
               <h2>Home Value Estimator</h2>
               <p>Our trusted tool to help you estimate the cost of an existing or future home in of our lovely neighborhoods</p>
               <form action="#" method="POST">
-                <div style="float:left;"> <label for="area"><b>Area</b></label> <input id="area" type="text" value="" name="area"> </div>
-                <div style="float:left;"> <label for="bedrooms"><b>Bedrooms</b></label> <input id="bedrooms" type="text" value="" name="bedrooms"> </div>
+                <div style="float:left;"> <label for="area"><b>Area</b></label> <input id="area" type="number" value="" name="area"> </div>
+                <div style="float:left;"> <label for="bedrooms"><b>Bedrooms</b></label> <input id="bedrooms" type="number" value="" name="bedrooms"> </div>
                 <br style="clear:both;" />
-                <div style="float:left;"> <label for="bathrooms"><b>Bathrooms</b></label> <input id="bathrooms" type="text" value="" name="bathrooms"> </div>
-                <div style="float:left;"> <label for="stories"><b>Stories</b></label> <input id="stories" type="text" value="" name="stories"> </div>
+                <div style="float:left;"> <label for="bathrooms"><b>Bathrooms</b></label> <input id="bathrooms" type="number" value="" name="bathrooms"> </div>
+                <div style="float:left;"> <label for="stories"><b>Stories</b></label> <input id="stories" type="number" value="" name="stories"> </div>
                 <br style="clear:both;" />
                 <div class="radio-group"> <label><b>Mainroad Access:</b></label>
                   <label class="radio" for="mainroad_yes"><input id="mainroad_yes" type="radio" value="1" name="mainroad">Yes</label>
@@ -111,7 +111,10 @@
                 <br /> <input type="submit" class="button" value="Calculate">
                 </form>
               <br style="clear:both;" />
-              <input type="text" id="estimate" name="estimate" value="{{estimated_value}}" readonly>
+              <div class="estimation">
+                <span class="currency">$</span>
+                <input type="text" id="estimate" name="estimate" value="{{estimated_value}}" readonly>
+              </div>
             </div>
           </div>
         </article>

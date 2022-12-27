@@ -5,9 +5,11 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.preprocessing import LabelEncoder
 from sklearn import metrics
 
+
 app = Flask(__name__)
 
 df = pd.read_csv("Housing.csv")
+
 
 # List of variables to map
 varlist = ['mainroad', 'guestroom', 'basement',
@@ -32,7 +34,6 @@ y = df.iloc[:, :1]
 regressor = RandomForestRegressor(n_estimators=100, random_state=0)
 
 regressor.fit(x.values, y.values.ravel())
-
 
 def value_estimaiton(area, bedrooms, bathrooms, stories, mainroad,
                      guestroom, basement, hotwater, aircon,
